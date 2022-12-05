@@ -12,6 +12,12 @@ class Symbol(Enum):
     ROCK = 1
     PAPER = 2
     SCISSOR = 3
+    
+# TO DO:
+# Replace if else logic with win dictionary and loss dictionary
+# Key:Value is YourMove:OpponentMove
+# WIN_COMBO = [R:S, P:R, S:P]
+# LOSE_COMBO = [R:P, P:S, S:R]
 
 class Hand:
     def __init__(self, *args):
