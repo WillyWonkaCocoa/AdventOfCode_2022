@@ -21,10 +21,10 @@ else:
         second_begin = int(second_begin)
         second_end = int(second_end)
         
-        if (first_begin >= second_begin and first_end <= second_end) or (second_begin >= first_begin and second_end <= first_end):
+        if (first_end >= second_begin and first_begin <= second_end):
             counter += 1
         
-    print(f'There are {counter} assignment pairs where one range fully contain the other.')
+    print(f'There are {counter} assignment pairs where ranges overlap.')
     f.close()
 
 
